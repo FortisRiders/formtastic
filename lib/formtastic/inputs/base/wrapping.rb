@@ -21,7 +21,7 @@ module Formtastic
           opts[:class] << "input"
           opts[:class] << "error" if errors?
           opts[:class] << "optional" if optional?
-          opts[:class] << "required" if required?
+          opts[:class] << "required" if use_html5_required? && required?
           opts[:class] << "autofocus" if autofocus?
           opts[:class] = opts[:class].join(' ')
           

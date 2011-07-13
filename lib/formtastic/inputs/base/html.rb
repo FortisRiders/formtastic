@@ -19,11 +19,12 @@ module Formtastic
         end
         
         def input_html_options
-          { 
+          opts = { 
             :id => dom_id,
-            :required => required?,
             :autofocus => autofocus?
-          }.merge(options[:input_html] || {})
+          }
+          opts[:required] = required? if use_html5_required?
+          opts.merge(options[:input_html] || {})
         end
         
         def dom_id

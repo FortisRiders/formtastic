@@ -128,6 +128,10 @@ module Formtastic
             return responds_to_global_required? && !!builder.all_fields_required_by_default
           end
         end
+        
+        def use_html5_required?
+          false
+        end
 
         def not_required_through_negated_validation?
           @not_required_through_negated_validation
