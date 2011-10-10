@@ -9,57 +9,57 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 --------------------------------------------------------------------------------------------------*/
 
-/* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just .formtastic
+/* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just .formtastic-enabled
 --------------------------------------------------------------------------------------------------*/
-.formtastic,
-.formtastic ul,
-.formtastic ol,
-.formtastic li,
-.formtastic fieldset,
-.formtastic legend,
-.formtastic input,
-.formtastic textarea,
-.formtastic select,
-.formtastic p {
+.formtastic-enabled,
+.formtastic-enabled ul,
+.formtastic-enabled ol,
+.formtastic-enabled li,
+.formtastic-enabled fieldset,
+.formtastic-enabled legend,
+.formtastic-enabled input,
+.formtastic-enabled textarea,
+.formtastic-enabled select,
+.formtastic-enabled p {
   margin:0;
   padding:0;
 }
 
-.formtastic fieldset {
+.formtastic-enabled fieldset {
   border:0;
 }
 
-.formtastic em,
-.formtastic strong {
+.formtastic-enabled em,
+.formtastic-enabled strong {
   font-style:normal;
   font-weight:normal;
 }
 
-.formtastic ol,
-.formtastic ul {
+.formtastic-enabled ol,
+.formtastic-enabled ul {
   list-style:none;
 }
 
-.formtastic abbr,
-.formtastic acronym {
+.formtastic-enabled abbr,
+.formtastic-enabled acronym {
   border:0;
   font-variant:normal;
 }
 
-.formtastic input,
-.formtastic textarea {
+.formtastic-enabled input,
+.formtastic-enabled textarea {
   font-family:sans-serif;
   font-size:inherit;
   font-weight:inherit;
 }
 
-.formtastic input,
-.formtastic textarea,
-.formtastic select {
+.formtastic-enabled input,
+.formtastic-enabled textarea,
+.formtastic-enabled select {
   font-size:100%;
 }
 
-.formtastic legend {
+.formtastic-enabled legend {
   white-space:normal;
   color:#000;
 }
@@ -67,13 +67,13 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* SEMANTIC ERRORS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .errors {
+.formtastic-enabled .errors {
   color:#cc0000;
   margin:0.5em 0 1.5em 25%;
   list-style:square;
 }
 
-.formtastic .errors li {
+.formtastic-enabled .errors li {
   padding:0;
   border:none;
   display:list-item;
@@ -82,12 +82,12 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* BUTTONS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .buttons {
+.formtastic-enabled .buttons {
   overflow:hidden; zoom:1; /* clear containing floats */
   padding-left:25%;
 }
 
-.formtastic .button {
+.formtastic-enabled .button {
   float:left;
   padding-right:0.5em;
 }
@@ -95,11 +95,11 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* INPUTS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .inputs {
+.formtastic-enabled .inputs {
   overflow:hidden; zoom:1; /* clear containing floats */
 }
 
-.formtastic .input {
+.formtastic-enabled .input {
   overflow:hidden; zoom:1; /* clear containing floats */
   padding:0.5em 0; /* padding and negative margin juggling is for Firefox */
   margin-top:-0.5em;
@@ -109,39 +109,39 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* LEFT ALIGNED LABELS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .input .label {
+.formtastic-enabled .input .label {
   display:block;
   width:25%;
   float:left;
   padding-top:.2em;
 }
 
-.formtastic .fragments .label,
-.formtastic .choices .label {
+.formtastic-enabled .fragments .label,
+.formtastic-enabled .choices .label {
   position:absolute;
   width:95%;
   left:0px;
 }
 
-.formtastic .fragments .label label,
-.formtastic .choices .label label {
+.formtastic-enabled .fragments .label label,
+.formtastic-enabled .choices .label label {
   position:absolute;
 }
 
 /* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
 --------------------------------------------------------------------------------------------------*/
-.formtastic .choices {
+.formtastic-enabled .choices {
   position:relative;
 }
 
-.formtastic .choices-group {
+.formtastic-enabled .choices-group {
   float:left;
   width:74%;
   margin:0;
   padding:0 0 0 25%;
 }
 
-.formtastic .choice {
+.formtastic-enabled .choice {
   padding:0;
   border:0;
 }
@@ -149,7 +149,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* INLINE HINTS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .input .inline-hints {
+.formtastic-enabled .input .inline-hints {
   color:#666;
   margin:0.5em 0 0 25%;
 }
@@ -157,18 +157,18 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* INLINE ERRORS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .inline-errors {
+.formtastic-enabled .inline-errors {
   color:#cc0000;
   margin:0.5em 0 0 25%;
 }
 
-.formtastic .errors {
+.formtastic-enabled .errors {
   color:#cc0000;
   margin:0.5em 0 0 25%;
   list-style:square;
 }
 
-.formtastic .errors li {
+.formtastic-enabled .errors li {
   padding:0;
   border:none;
   display:list-item;
@@ -177,11 +177,11 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* STRING, NUMERIC, PASSWORD, EMAIL, URL, PHONE, SEARCH (ETC) OVERRIDES
 --------------------------------------------------------------------------------------------------*/
-.formtastic .stringish input {
+.formtastic-enabled .stringish input {
   width:72%;
 }
 
-.formtastic .stringish input[size] {
+.formtastic-enabled .stringish input[size] {
   width:auto;
   max-width:72%;
 }
@@ -189,11 +189,11 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* TEXTAREA OVERRIDES
 --------------------------------------------------------------------------------------------------*/
-.formtastic .text textarea {
+.formtastic-enabled .text textarea {
   width:72%;
 }
 
-.formtastic .text textarea[cols] {
+.formtastic-enabled .text textarea[cols] {
   width:auto;
   max-width:72%;
 }
@@ -201,14 +201,14 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* HIDDEN OVERRIDES
 --------------------------------------------------------------------------------------------------*/
-.formtastic .hidden {
+.formtastic-enabled .hidden {
   display:none;
 }
 
 
 /* BOOLEAN LABELS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .boolean label {
+.formtastic-enabled .boolean label {
   padding-left:25%;
   display:block;
 }
@@ -216,15 +216,15 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* CHOICE GROUPS
 --------------------------------------------------------------------------------------------------*/
-.formtastic .choices-group {
+.formtastic-enabled .choices-group {
   margin-bottom:-0.5em;
 }
 
-.formtastic .choice {
+.formtastic-enabled .choice {
   margin:0.1em 0 0.5em 0;
 }
 
-.formtastic .choice label {
+.formtastic-enabled .choice label {
   float:none;
   width:100%;
   line-height:100%;
@@ -235,8 +235,8 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* ADJUSTMENTS FOR INPUTS INSIDE LABELS (boolean input, radio input, check_boxes input)
 --------------------------------------------------------------------------------------------------*/
-.formtastic .choice label input,
-.formtastic .boolean label input {
+.formtastic-enabled .choice label input,
+.formtastic-enabled .boolean label input {
   margin:0 0.3em 0 0.1em;
   line-height:100%;
 }
@@ -244,18 +244,18 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* FRAGMENTED INPUTS (DATE/TIME/DATETIME)
 --------------------------------------------------------------------------------------------------*/
-.formtastic .fragments {
+.formtastic-enabled .fragments {
   position:relative;
 }
 
-.formtastic .fragments-group {
+.formtastic-enabled .fragments-group {
   float:left;
   width:74%;
   margin:0;
   padding:0 0 0 25%;
 }
 
-.formtastic .fragment {
+.formtastic-enabled .fragment {
   float:left;
   width:auto;
   margin:0 .3em 0 0;
@@ -263,11 +263,11 @@ This stylesheet forms part of the Formtastic Rails Plugin
   border:0;
 }
 
-.formtastic .fragment label {
+.formtastic-enabled .fragment label {
   display:none;
 }
 
-.formtastic .fragment label input {
+.formtastic-enabled .fragment label input {
   display:inline;
   margin:0;
   padding:0;
