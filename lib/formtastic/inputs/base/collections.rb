@@ -85,10 +85,10 @@ module Formtastic
 
             scope_conditions = conditions_from_reflection.empty? ? nil : {:conditions => conditions_from_reflection}
             if conditions_from_options.any?
-              reflection.klass.scoped(scope_conditions).where(conditions_from_options)
+              reflection.klass.all.scoped(scope_conditions).where(conditions_from_options)
             else
               find_options_from_options.merge!(:include => group_by) if self.respond_to?(:group_by) && group_by
-              reflection.klass.scoped(scope_conditions).where(find_options_from_options)
+              reflection.klass.all.scoped(scope_conditions).where(find_options_from_options)
             end
           end
         end
